@@ -7,6 +7,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+//Updates an url in the database.
 func UpdateUrl(c *gin.Context) {
 	var url Urls
 	id := c.Params.ByName("id")

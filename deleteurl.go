@@ -6,6 +6,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+//Deletes an URL from the database.
 func DeleteUrl(c *gin.Context) {
 	id := c.Params.ByName("id")
 	var url Urls
